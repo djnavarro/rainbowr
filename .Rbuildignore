@@ -1,3 +1,4 @@
 ^rainbowr\.Rproj$
 ^\.Rproj\.user$
-^\legacy$
+^legacy$
+^LICENSE\.md$
