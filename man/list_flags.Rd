@@ -2,10 +2,13 @@
 % Please edit documentation in R/flag.R
 \name{list_flags}
 \alias{list_flags}
-\title{Lists the flags}
+\title{List of LGBT Flags}
 \usage{
 list_flags()
 }
+\value{
+A character vector
+}
 \description{
-Lists the flags
+List of LGBT Flags
 }

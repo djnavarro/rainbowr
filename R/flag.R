@@ -1,7 +1,8 @@
 #' Creates an LGBT Pride Flag with R Logo
 #'
-#' @param flag character vector with names of the flags
-#' @param width numeric (width of the flag)
+#' @param flag character string (e.g., rainbow) naming the flag to be drawn
+#' @param width numeric (width of the flag in pixels)
+#' @return An object of class "magick-image"
 #' @export
 make_banner <- function(flag, width = 1000){
 
@@ -43,7 +44,8 @@ make_banner <- function(flag, width = 1000){
   return(banner)
 }
 
-#' Lists the flags
+#' List of LGBT Flags
+#' @return A character vector
 #' @export
 list_flags <- function() {
   c(

@@ -7,9 +7,12 @@
 make_banner(flag, width = 1000)
 }
 \arguments{
-\item{flag}{character vector with names of the flags}
+\item{flag}{character string (e.g., rainbow) naming the flag to be drawn}
 
-\item{width}{numeric (width of the flag)}
+\item{width}{numeric (width of the flag in pixels)}
+}
+\value{
+An object of class "magick-image"
 }
 \description{
 Creates an LGBT Pride Flag with R Logo
