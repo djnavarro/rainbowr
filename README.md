@@ -9,12 +9,12 @@
 status](https://travis-ci.org/djnavarro/rainbowr.svg?branch=master)](https://travis-ci.org/djnavarro/rainbowr)
 <!-- badges: end -->
 
-The rainbowr package provides functions to generate LGBT pride flags
-overlaid with the R logo
+The `rainbowr` package generates LGBT pride flags overlaid with the R
+logo
 
 ## Installation
 
-The package can be installed [GitHub](https://github.com/) with:
+The package can be installed from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -44,11 +44,11 @@ plot(trans_flag)
 
 <img src="man/figures/README-example-2.png" width="100%" />
 
-The set of flags is taken from the Wikipedia page for [LGBT
+The flags are taken from the Wikipedia page for [LGBT
 symbols](https://en.wikipedia.org/wiki/LGBT_symbols) and the Wikicommons
 page for [Sexual identity
 symbols](https://commons.wikimedia.org/wiki/Sexual_identity_symbols),
-and is only a partial listing. The flags inclided are:
+but is not exhaustive. To see which flags are included:
 
 ``` r
 list_flags()
