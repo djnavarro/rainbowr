@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# rainbowr
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The rainbowr package provides functions to generate LGBT pride flags overlaid with the R logo
+
+## Installation
+
+The package can be installed [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("djnavarro/rainbowr")
+```
+## Example
+
+```{r example}
+library(magick)
+library(rainbowr)
+
+rainbow_flag <- make_banner("rainbow")
+trans_flag <- make_banner("transgender")
+
+plot(rainbow_flag)
+plot(trans_flag)
+```
+
+The set of flags is taken from the Wikipedia page for [LGBT symbols](https://en.wikipedia.org/wiki/LGBT_symbols) and the Wikicommons page for [Sexual identity symbols](https://commons.wikimedia.org/wiki/Sexual_identity_symbols), and is only a partial listing. The flags inclided are:
+
+```{r flag_list}
+list_flags()
+```
