@@ -1,12 +1,13 @@
 Package: rainbowr
-Title: What the Package Does (One Line, Title Case)
+Title: Overlay LGBT Pride Flags with the R Logo
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Danielle",
            family = "Navarro",
            role = c("aut", "cre"),
            email = "d.navarro@unsw.edu.au")
-Description: What the package does (one paragraph).
+Description: Generates a variety of LGBT flags (e.g., rainbow, transgender)
+    overlaid with the R logo, using the magick package. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
