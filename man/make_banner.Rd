@@ -4,7 +4,7 @@
 \alias{make_banner}
 \title{Creates an LGBT Pride Flag with R Logo}
 \usage{
-make_banner(flag, width = 1000)
+make_banner(flag = "rainbow", width = 1000)
 }
 \arguments{
 \item{flag}{character string (e.g., rainbow) naming the flag to be drawn}

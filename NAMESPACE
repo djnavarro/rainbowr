@@ -2,3 +2,4 @@
 
 export(list_flags)
 export(make_banner)
+export(make_hex)
