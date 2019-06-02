@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/djnavarro/rainbowr.svg?branch=master)](https://travis-ci.org/djnavarro/rainbowr)
 <!-- badges: end -->
 
 The rainbowr package provides functions to generate LGBT pride flags
