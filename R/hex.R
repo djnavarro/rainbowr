@@ -2,16 +2,21 @@
 #'
 #' @param flag character string (e.g., rainbow) naming the flag to be drawn
 #' @param width numeric (width of the flag in pixels)
+#' @param palette character vector of colours 1, 2 or 4 colours
 #' @return An object of class "magick-image"
 #' @export
-make_hex <- function(flag = "rainbow", width = 1000) {
+make_hex <- function(flag = "rainbow", width = 1000,
+                     palette = c("#cbced0", "#84838b", "#505050", "#a0a0a0")) {
 
+  # set up
   opt <- list(
     flag_width = width / .6,
     flag_height = width,
     logo_width = width / 2
   )
-  img <- get_images(get_paths(flag), opt)
+
+  # get the images
+  img <- get_images(flag, opt, palette)
 
   # crop the flag to square
   img$flag <- magick::image_crop(

@@ -2,9 +2,11 @@
 #'
 #' @param flag character string (e.g., rainbow) naming the flag to be drawn
 #' @param width numeric (width of the flag in pixels)
+#' @param palette character vector of colours 1, 2 or 4 colours
 #' @return An object of class "magick-image"
 #' @export
-make_banner <- function(flag = "rainbow", width = 1000){
+make_banner <- function(flag = "rainbow", width = 1000,
+                        palette = c("#cbced0", "#84838b", "#505050", "#a0a0a0")){
 
   # settings
   opt <- list(
@@ -17,7 +19,7 @@ make_banner <- function(flag = "rainbow", width = 1000){
   opt$left <- opt$flag_width - opt$logo_width - opt$gutter
 
   # construct constituents
-  img <- get_images(get_paths(flag), opt)
+  img <- get_images(flag, opt, palette)
   cmd <- paste0("rainbowR %>% filter(flag = '", flag, "')")
 
   # place the logo over the flag
@@ -43,58 +45,5 @@ make_banner <- function(flag = "rainbow", width = 1000){
   return(banner)
 }
 
-#' List of LGBT Flags
-#' @return A character vector
-#' @export
-list_flags <- function() {
-  c(
-    "agender",
-    "aromantic",
-    "asexual",
-    "bear",
-    "bisexual",
-    "demisexual",
-    "genderfluid",
-    "genderqueer",
-    "intersex",
-    "lesbian",
-    "lipstick_lesbian",
-    "nonbinary",
-    "pansexual",
-    "polyamory",
-    "polysexual",
-    "rainbow",
-    "transgender",
-    "twink"
-  )
-}
 
 
-get_paths <- function(flag) {
-  return(list(
-    flag = system.file("extdata", paste0(flag, ".svg"), package = "rainbowr"),
-    logo = system.file("extdata", "r_logo_bw.svg", package = "rainbowr")
-  ))
-}
-
-get_images <- function(path, opt) {
-  return(list(
-    flag = magick::image_read_svg(path = path$flag,
-                                  width = opt$flag_width,
-                                  height = opt$flag_height),
-    logo = magick::image_read_svg(path = path$logo,
-                                  width = opt$logo_width)
-  ))
-}
-
-
-# flags <- list.files(path = here("flags"))
-#
-# for(flag in flags) {
-#   banner_name <- flag %>%
-#     str_replace(fixed(".svg"), fixed(".png"))
-#
-#   flag %>%
-#     make_banner() %>%
-#     image_write(path = here("banners",banner_name))
-# }
