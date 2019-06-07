@@ -3,10 +3,12 @@
 #' @param flag character string (e.g., rainbow) naming the flag to be drawn
 #' @param width numeric (width of the flag in pixels)
 #' @param palette character vector of colours 1, 2 or 4 colours
+#' @param background character string specifying the background colour (default = "white")
 #' @return An object of class "magick-image"
 #' @export
 make_hex <- function(flag = "rainbow", width = 1000,
-                     palette = c("#cbced0", "#84838b", "#505050", "#a0a0a0")) {
+                     palette = c("#cbced0", "#84838b", "#505050", "#a0a0a0"),
+                     background = "white") {
 
   # set up
   opt <- list(
@@ -34,16 +36,19 @@ make_hex <- function(flag = "rainbow", width = 1000,
     )
 
   # truncate to hexagon
-  hex <- as_hex(hex)
+  hex <- as_hex(hex, background)
 
   return(hex)
 }
 
-as_hex <- function(image) {
+as_hex <- function(image, background = "white") {
 
   height <- magick::image_info(image)$height
   trim_corner <- paste0("0x", round(height*.25))
   trim_edge <- paste0(round(height*.067), "x0")
+
+  # set the background colour
+  image <- magick::image_background(image, color = background, flatten = FALSE)
 
   # this is really inefficient, but it was the
   # first thing I thought of and I'm too lazy to
@@ -80,6 +85,10 @@ as_hex <- function(image) {
 #   width = rep(1000, 3)
 # )
 
+#' Creates a Tiling of LGBT Hex Stickers
+#'
+#' @param  data data frame or tibble specifying the tiling
+#' @param  width width of each hex tile in pixels
 #' @export
 make_hextile <- function(data, width = 1000) {
 
@@ -93,12 +102,10 @@ make_hextile <- function(data, width = 1000) {
     hexes[[i]] <- make_hex(flag = data$flag[i],
                            palette = c(data$palette1[i],
                                        data$palette2[i]),
-                           width = width)
+                           width = width,
+                           background = "#123456")
 
-    hexes[[i]] <- magick::image_fill(hexes[[i]], "pink", "1x1")
-    hexes[[i]] <- magick::image_fill(hexes[[i]], "blue", "1x870")
-    hexes[[i]] <- magick::image_fill(hexes[[i]], "green", "1000x1")
-    hexes[[i]] <- magick::image_fill(hexes[[i]], "black", "1000x870")
+    hexes[[i]] <- magick::image_transparent(hexes[[i]], color = "#123456")
 
     xpos <- (data$col[i] - 1) * width
     if(data$row[i] %% 2 == 0) xpos <- xpos + width/2

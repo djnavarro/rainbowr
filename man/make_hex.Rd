@@ -5,7 +5,7 @@
 \title{Creates an LGBT Pride Hex Sticker with R Logo}
 \usage{
 make_hex(flag = "rainbow", width = 1000, palette = c("#cbced0",
-  "#84838b", "#505050", "#a0a0a0"))
+  "#84838b", "#505050", "#a0a0a0"), background = "white")
 }
 \arguments{
 \item{flag}{character string (e.g., rainbow) naming the flag to be drawn}
@@ -13,6 +13,8 @@ make_hex(flag = "rainbow", width = 1000, palette = c("#cbced0",
 \item{width}{numeric (width of the flag in pixels)}
 
 \item{palette}{character vector of colours 1, 2 or 4 colours}
+
+\item{background}{character string specifying the background colour (default = "white")}
 }
 \value{
 An object of class "magick-image"
