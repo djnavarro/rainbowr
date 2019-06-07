@@ -71,4 +71,48 @@ as_hex <- function(image) {
   return(image)
 }
 
+# data <- tibble::tibble(
+#   flag = c("rainbow", "transgender", "bisexual"),
+#   palette1 = c("white", "grey50", "#ccccff"),
+#   palette2 = c("black", "black", "white"),
+#   row = c(1, 1, 2),
+#   col = c(1, 2, 1),
+#   width = rep(1000, 3)
+# )
+
+#' @export
+make_hextile <- function(data, width = 1000) {
+
+  hexes <- list()
+  ncol <- max(data$col)
+  nrow <- max(data$row)
+  hextile <- magick::image_blank(width = width * ncol + width,
+                                 height = width + width * (.5 + nrow * .5))
+  for(i in 1:nrow(data)) {
+    cat(".")
+    hexes[[i]] <- make_hex(flag = data$flag[i],
+                           palette = c(data$palette1[i],
+                                       data$palette2[i]),
+                           width = width)
+
+    hexes[[i]] <- magick::image_fill(hexes[[i]], "pink", "1x1")
+    hexes[[i]] <- magick::image_fill(hexes[[i]], "blue", "1x870")
+    hexes[[i]] <- magick::image_fill(hexes[[i]], "green", "1000x1")
+    hexes[[i]] <- magick::image_fill(hexes[[i]], "black", "1000x870")
+
+    xpos <- (data$col[i] - 1) * width
+    if(data$row[i] %% 2 == 0) xpos <- xpos + width/2
+    ypos <- (data$row[i] - 1) * width * .75
+    offstr <- paste0("+", xpos, "+", ypos)
+    hextile <- magick::image_composite(
+      image = hextile,
+      composite_image = hexes[[i]],
+      operator = "over",
+      offset = offstr)
+  }
+
+
+  return(hextile)
+
+}
 
