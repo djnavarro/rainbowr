@@ -95,6 +95,7 @@ make_hextile <- function(data, width = 1000) {
   hexes <- list()
   ncol <- max(data$col)
   nrow <- max(data$row)
+  height <- width / .87
   hextile <- magick::image_blank(width = width * ncol + width,
                                  height = width + width * (.5 + nrow * .5))
   for(i in 1:nrow(data)) {
@@ -106,10 +107,12 @@ make_hextile <- function(data, width = 1000) {
                            background = "#123456")
 
     hexes[[i]] <- magick::image_transparent(hexes[[i]], color = "#123456")
+    hexes[[i]] <- magick::image_resize(hexes[[i]], magick::geometry_size_pixels(width, height))
 
     xpos <- (data$col[i] - 1) * width
     if(data$row[i] %% 2 == 0) xpos <- xpos + width/2
-    ypos <- (data$row[i] - 1) * width * .75
+    ypos <- (data$row[i] - 1) * height * .75
+
     offstr <- paste0("+", xpos, "+", ypos)
     hextile <- magick::image_composite(
       image = hextile,
