@@ -30,7 +30,7 @@ devtools::install_github("djnavarro/rainbowr")
 ```
 ## Example 1: LGBT banners
 
-```{r example}
+```{r example1}
 library(magick)
 library(rainbowr)
 
@@ -61,7 +61,7 @@ plot(trans_hex)
 ## Example 3: Tiled LGBT hexes
 
 
-```{r example 3}
+```{r example3}
 df <- data.frame(
   flag = c("rainbow", "transgender", "bisexual", "bear", "aromantic", "lesbian"),
   palette1 = c("white", "grey80", "#ccccff", "grey30", "grey50", "grey50"),

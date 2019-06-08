@@ -34,7 +34,7 @@ rainbow_flag <- make_banner("rainbow")
 plot(rainbow_flag)
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
+<img src="man/figures/README-example1-1.png" width="100%" />
 
 ``` r
 
@@ -42,7 +42,7 @@ trans_flag <- make_banner("transgender")
 plot(trans_flag)
 ```
 
-<img src="man/figures/README-example-2.png" width="100%" />
+<img src="man/figures/README-example1-2.png" width="100%" />
 
 The flags are taken from the Wikipedia page for [LGBT
 symbols](https://en.wikipedia.org/wiki/LGBT_symbols) and the Wikicommons
@@ -99,4 +99,4 @@ hextile <- make_hextile(df)
 plot(hextile)
 ```
 
-<img src="man/figures/README-example 3-1.png" width="100%" />
+<img src="man/figures/README-example3-1.png" width="100%" />
