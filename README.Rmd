@@ -28,16 +28,16 @@ The package can be installed from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("djnavarro/rainbowr")
 ```
-## Example
+## Example 1: LGBT banners
 
 ```{r example}
 library(magick)
 library(rainbowr)
 
 rainbow_flag <- make_banner("rainbow")
-trans_flag <- make_banner("transgender")
-
 plot(rainbow_flag)
+
+trans_flag <- make_banner("transgender")
 plot(trans_flag)
 ```
 
@@ -46,3 +46,34 @@ The flags are taken from the Wikipedia page for [LGBT symbols](https://en.wikipe
 ```{r flag_list}
 list_flags()
 ```
+
+
+## Example 2: LGBT hexes
+
+```{r example2}
+rainbow_hex <- make_hex("rainbow")
+plot(rainbow_hex)
+
+trans_hex <- make_hex("transgender", palette = c("grey50", "black"))
+plot(trans_hex)
+```
+
+## Example 3: Tiled LGBT hexes
+
+
+```{r example 3}
+df <- data.frame(
+  flag = c("rainbow", "transgender", "bisexual", "bear", "aromantic", "lesbian"),
+  palette1 = c("white", "grey80", "#ccccff", "grey30", "grey50", "grey50"),
+  palette2 = c("black", "black", "white", "brown", "black", "lavender"),
+  row = c(1, 1, 2, 3, 3, 2),
+  col = c(1, 2, 1, 2, 3, 3),
+  stringsAsFactors = FALSE
+)
+
+hextile <- make_hextile(df)
+plot(hextile)
+```
+
+
+

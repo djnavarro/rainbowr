@@ -21,7 +21,7 @@ The package can be installed from [GitHub](https://github.com/) with:
 devtools::install_github("djnavarro/rainbowr")
 ```
 
-## Example
+## Example 1: LGBT banners
 
 ``` r
 library(magick)
@@ -31,14 +31,14 @@ library(magick)
 library(rainbowr)
 
 rainbow_flag <- make_banner("rainbow")
-trans_flag <- make_banner("transgender")
-
 plot(rainbow_flag)
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
 
 ``` r
+
+trans_flag <- make_banner("transgender")
 plot(trans_flag)
 ```
 
@@ -59,3 +59,44 @@ list_flags()
 #> [13] "pansexual"        "polyamory"        "polysexual"      
 #> [16] "rainbow"          "transgender"      "twink"
 ```
+
+## Example 2: LGBT hexes
+
+``` r
+rainbow_hex <- make_hex("rainbow")
+plot(rainbow_hex)
+```
+
+<img src="man/figures/README-example2-1.png" width="100%" />
+
+``` r
+
+trans_hex <- make_hex("transgender", palette = c("grey50", "black"))
+plot(trans_hex)
+```
+
+<img src="man/figures/README-example2-2.png" width="100%" />
+
+## Example 3: Tiled LGBT hexes
+
+``` r
+df <- data.frame(
+  flag = c("rainbow", "transgender", "bisexual", "bear", "aromantic", "lesbian"),
+  palette1 = c("white", "grey80", "#ccccff", "grey30", "grey50", "grey50"),
+  palette2 = c("black", "black", "white", "brown", "black", "lavender"),
+  row = c(1, 1, 2, 3, 3, 2),
+  col = c(1, 2, 1, 2, 3, 3),
+  stringsAsFactors = FALSE
+)
+
+hextile <- make_hextile(df)
+#> adding rainbow hex (1 of 6)
+#> adding transgender hex (2 of 6)
+#> adding bisexual hex (3 of 6)
+#> adding bear hex (4 of 6)
+#> adding aromantic hex (5 of 6)
+#> adding lesbian hex (6 of 6)
+plot(hextile)
+```
+
+<img src="man/figures/README-example 3-1.png" width="100%" />
