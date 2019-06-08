@@ -76,15 +76,6 @@ as_hex <- function(image, background = "white") {
   return(image)
 }
 
-# data <- tibble::tibble(
-#   flag = c("rainbow", "transgender", "bisexual"),
-#   palette1 = c("white", "grey50", "#ccccff"),
-#   palette2 = c("black", "black", "white"),
-#   row = c(1, 1, 2),
-#   col = c(1, 2, 1),
-#   width = rep(1000, 3)
-# )
-
 #' Creates a Tiling of LGBT Hex Stickers
 #'
 #' @param  data data frame or tibble specifying the tiling
@@ -99,10 +90,9 @@ make_hextile <- function(data, width = 1000) {
   hextile <- magick::image_blank(width = width * ncol + width,
                                  height = width + width * (.5 + nrow * .5))
   for(i in 1:nrow(data)) {
-    cat(".")
+    message("adding ", data$flag[i], " hex (", i, " of ", nrow(data), ")")
     hexes[[i]] <- make_hex(flag = data$flag[i],
-                           palette = c(data$palette1[i],
-                                       data$palette2[i]),
+                           palette = c(data$palette1[i], data$palette2[i]),
                            width = width,
                            background = "#123456")
 
