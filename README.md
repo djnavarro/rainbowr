@@ -29,6 +29,7 @@ library(magick)
 #> Enabled features: fontconfig, freetype, fftw, lcms, pango, x11
 #> Disabled features: cairo, ghostscript, rsvg, webp
 library(rainbowr)
+#> 🌈
 
 rainbow_flag <- make_banner("rainbow")
 plot(rainbow_flag)
