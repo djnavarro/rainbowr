@@ -7,6 +7,10 @@
 
 [![Travis build
 status](https://travis-ci.org/djnavarro/rainbowr.svg?branch=master)](https://travis-ci.org/djnavarro/rainbowr)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/rainbowr)](https://cran.r-project.org/package=rainbowr)
 <!-- badges: end -->
 
 The `rainbowr` package generates LGBT pride flags overlaid with the R
