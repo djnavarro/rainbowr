@@ -1,16 +1,20 @@
 Package: rainbowr
-Title: Overlay LGBT Pride Flags with the R Logo
+Title: Make LGBT Hexes and Flags
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Danielle",
            family = "Navarro",
            role = c("aut", "cre"),
-           email = "d.navarro@unsw.edu.au")
+           email = "d.navarro@unsw.edu.au",
+           comment = c(ORCID = "0000-0001-7648-6578"))
 Description: Generates a variety of LGBT flags (e.g., rainbow, transgender)
-    overlaid with the R logo, using the magick package. 
+    overlaid with the R logo, using the magick package. Also generates hex
+    stickers based on LGBT flags and tilings thereof.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/djnavarro/rainbowr
+BugReports: https://github.com/djnavarro/rainbowr/issues
 Imports: 
     magick,
     scales
