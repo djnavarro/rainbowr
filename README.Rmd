@@ -12,7 +12,8 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# rainbowr
+
+# rainbowr <img src="man/figures/logo.png" width ="30%" align="right" />
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/djnavarro/rainbowr.svg?branch=master)](https://travis-ci.org/djnavarro/rainbowr)

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# rainbowr
+# rainbowr <img src="man/figures/logo.png" width ="30%" align="right" />
 
 <!-- badges: start -->
 
