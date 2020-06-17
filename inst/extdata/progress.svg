@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="859px" height="504px" viewBox="0 0 859 504" enable-background="new 0 0 859 504" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="859" height="504"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<rect x="66.097" y="-0.129" fill="#EE3325" width="792.644" height="83.572"/>
+		<rect x="66.097" y="83.442" fill="#F57F26" width="792.644" height="84.468"/>
+		<rect x="66.097" y="167.911" fill="#FCEE1A" width="792.644" height="84.468"/>
+		<rect x="66.097" y="252.378" fill="#58B948" width="792.644" height="84.468"/>
+		<rect x="66.097" y="336.846" fill="#0656A5" width="792.644" height="84.469"/>
+		<g>
+			<defs>
+				<rect id="SVGID_3_" x="-858.94" y="-400.51" width="1717.68" height="1305.949"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  overflow="visible"/>
+			</clipPath>
+			<rect x="66.097" y="421.315" clip-path="url(#SVGID_4_)" fill="#9F258F" width="792.644" height="82.556"/>
+			<polyline clip-path="url(#SVGID_4_)" points="-205.882,-400.51 -859,252.608 -206.111,905.5 447.01,252.378 -205.882,-400.51 			
+				"/>
+		</g>
+		<polyline fill="#603A19" points="383.689,252.378 -206.041,-337.352 -795.841,252.449 -206.111,842.179 383.689,252.378 		"/>
+		<polyline fill="#7DBFE9" points="320.37,252.378 -205.7,-273.691 -732.182,252.79 -206.111,778.86 320.37,252.378 		"/>
+		<polyline fill="#F398C1" points="257.05,252.378 -206.359,-211.033 -669.522,252.13 -206.111,715.54 257.05,252.378 		"/>
+		<polyline fill="#FFFFFF" points="193.73,252.378 -206.018,-147.374 -605.863,252.472 -206.111,652.219 193.73,252.378 		"/>
+	</g>
+</g>
+</svg>
