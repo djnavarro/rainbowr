@@ -3,33 +3,16 @@
 #' @return A character vector
 #' @export
 list_flags <- function() {
-  c(
-    "agender",
-    "aromantic",
-    "asexual",
-    "bear",
-    "bisexual",
-    "demisexual",
-    "genderfluid",
-    "genderqueer",
-    "intersex",
-    "lesbian",
-    "lipstick_lesbian",
-    "nonbinary",
-    "pansexual",
-    "polyamory",
-    "polysexual",
-    "rainbow",
-    "transgender",
-    "twink"
-  )
+  x <- list.files(system.file("extdata", "flags", package = "rainbowr"))
+  x <- gsub(x = x, pattern = ".svg", replacement = "", fixed = TRUE)
+  return(x)
 }
 
 
 get_images <- function(flag, opt, palette) {
 
   # where are the files?
-  flag_path <- system.file("extdata", paste0(flag, ".svg"), package = "rainbowr")
+  flag_path <- system.file("extdata", "flags", paste0(flag, ".svg"), package = "rainbowr")
   logo_path <- system.file("extdata", "r_logo_template.svg", package = "rainbowr")
 
   # check the palette

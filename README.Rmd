@@ -44,7 +44,7 @@ trans_flag <- make_banner("transgender")
 plot(trans_flag)
 ```
 
-The flags are taken from the Wikipedia page for [LGBT symbols](https://en.wikipedia.org/wiki/LGBT_symbols) and the Wikicommons page for [Sexual identity symbols](https://commons.wikimedia.org/wiki/Sexual_identity_symbols), but is not exhaustive. To see which flags are included:
+The flags are taken from the Wikipedia page for [LGBT symbols](https://en.wikipedia.org/wiki/LGBT_symbols) and the Wikicommons page for [Sexual identity symbols](https://commons.wikimedia.org/wiki/Sexual_identity_symbols), but is not exhaustive. To see which flags are included: 
 
 ```{r flag_list}
 list_flags()

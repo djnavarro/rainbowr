@@ -29,9 +29,9 @@ devtools::install_github("djnavarro/rainbowr")
 
 ``` r
 library(magick)
-#> Linking to ImageMagick 6.9.7.4
-#> Enabled features: fontconfig, freetype, fftw, lcms, pango, x11
-#> Disabled features: cairo, ghostscript, rsvg, webp
+#> Linking to ImageMagick 6.9.10.23
+#> Enabled features: fontconfig, freetype, fftw, lcms, pango, webp, x11
+#> Disabled features: cairo, ghostscript, rsvg
 library(rainbowr)
 #> 🌈
 
@@ -57,12 +57,12 @@ but is not exhaustive. To see which flags are included:
 
 ``` r
 list_flags()
-#>  [1] "agender"          "aromantic"        "asexual"         
-#>  [4] "bear"             "bisexual"         "demisexual"      
-#>  [7] "genderfluid"      "genderqueer"      "intersex"        
-#> [10] "lesbian"          "lipstick_lesbian" "nonbinary"       
-#> [13] "pansexual"        "polyamory"        "polysexual"      
-#> [16] "rainbow"          "transgender"      "twink"
+#>  [1] "agender"          "aromantic"        "asexual"          "bear"            
+#>  [5] "bisexual"         "demiboy"          "demigirl"         "demisexual"      
+#>  [9] "genderfluid"      "genderqueer"      "intersex"         "lesbian"         
+#> [13] "lipstick_lesbian" "nonbinary"        "pansexual"        "philadelphia"    
+#> [17] "polyamory"        "polysexual"       "progress"         "rainbow"         
+#> [21] "transgender"      "twink"
 ```
 
 ## Example 2: LGBT hexes

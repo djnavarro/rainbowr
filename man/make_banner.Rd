@@ -4,8 +4,11 @@
 \alias{make_banner}
 \title{Creates an LGBT Pride Flag with R Logo}
 \usage{
-make_banner(flag = "rainbow", width = 1000, palette = c("#cbced0",
-  "#84838b", "#505050", "#a0a0a0"))
+make_banner(
+  flag = "rainbow",
+  width = 1000,
+  palette = c("#cbced0", "#84838b", "#505050", "#a0a0a0")
+)
 }
 \arguments{
 \item{flag}{character string (e.g., rainbow) naming the flag to be drawn}
