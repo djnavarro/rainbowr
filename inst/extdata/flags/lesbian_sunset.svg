@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="Lesbian pride flag.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 344.48752 229.65834" height="868" width="1302">
+  <defs id="defs2"/>
+  <sodipodi:namedview inkscape:window-maximized="0" inkscape:window-y="0" inkscape:window-x="128" inkscape:window-height="1030" inkscape:window-width="1424" units="px" fit-margin-bottom="0" fit-margin-right="0" fit-margin-left="0" fit-margin-top="0" inkscape:snap-center="true" inkscape:snap-midpoints="true" inkscape:snap-smooth-nodes="true" inkscape:object-paths="true" inkscape:snap-intersection-paths="true" inkscape:snap-object-midpoints="true" showgrid="false" inkscape:document-rotation="0" inkscape:current-layer="layer1" inkscape:document-units="mm" inkscape:cy="383.50437" inkscape:cx="1512.208" inkscape:zoom="0.35" inkscape:pageshadow="2" inkscape:pageopacity="0.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base"/>
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g transform="translate(501.00748,19.654762)" id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
+    <rect y="78.770241" x="-501.00748" height="32.808342" width="344.48749" id="rect853" style="fill:#ffffff;fill-opacity:1;stroke-width:0.0275507"/>
+    <rect y="45.961906" x="-501.00745" height="32.808334" width="344.48746" id="rect851" style="fill:#ff9a56;fill-opacity:1;stroke-width:0.042343"/>
+    <rect y="13.153572" x="-501.00745" height="32.808334" width="344.48746" id="rect849" style="fill:#ef7627;fill-opacity:1;stroke-width:0.0301347"/>
+    <rect y="-19.654762" x="-501.00745" height="32.808334" width="344.48746" id="rect847" style="fill:#d52d00;fill-opacity:1;stroke-width:0.0434014"/>
+    <rect y="111.57858" x="-501.00745" height="32.808334" width="344.48755" id="rect855" style="fill:#d162a4;fill-opacity:1;stroke-width:0.0264192"/>
+    <rect y="144.38692" x="-501.00745" height="32.808334" width="344.48755" id="rect857" style="fill:#b55690;fill-opacity:1;stroke-width:0.0411305"/>
+    <rect y="177.19525" x="-501.00745" height="32.808334" width="344.48749" id="rect859" style="fill:#a30262;fill-opacity:1;stroke-width:0.0434013"/>
+  </g>
+</svg>
